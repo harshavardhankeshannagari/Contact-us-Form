@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action="/submit" method="post">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="dob">Date of Birth (DD-MM-YYYY):</label><br>
+        <input type="text" id="dob" name="dob" placeholder="DD-MM-YYYY" pattern="\d{2}-\d{2}-\d{4}" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select><br><br>
+
+        <label for="message">Message / Preferences:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..."></textarea><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to our newsletter</label><br><br>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>
